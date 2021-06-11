@@ -1,0 +1,124 @@
+html {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    background-color: #ffe6ff;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    font-size: 24px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    display: inline;
+    padding: 15px;
+}
+
+ body {
+     padding-left: 20px;
+     
+     
+ }
+ .myname h1 {
+     font-size: 48px;
+     color:black;
+     text-align: left;
+ }
+#about {
+    display: flex;
+    align-items: center;
+
+}
+#about img {
+    margin: 40px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px #ff99ff;
+
+}
+#about h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px #ff99ff;
+    width: 35%;
+    padding-left: 10px;
+
+}
+#titlecontainer h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px #ff99ff;
+    width: 25%;
+    padding-left: 10px;
+}
+#mothercontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: center;
+ 
+    
+   
+}
+.container {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px #ff99ff;
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;   
+}
+#skills h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px #ff99ff;
+    width: 25%;
+    padding-left: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+footer h3 {
+    text-align: center;
+    font-size: 30px;
+
+}
+/* CONTACT.HTML STYLING */
+#contactlist {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+
+}
+#contactlist li a {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 10px 10px #ff99ff
+    
+    
+}
