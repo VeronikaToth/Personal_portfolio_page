@@ -2,6 +2,7 @@ html {
     font-family: 'Space Mono', monospace;
     font-size: 16px;
     background-color: #ffe6ff;
+   
     
 }
 header {
@@ -9,17 +10,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-ul {
+.firstlist ul {
     list-style-type: none;
     font-size: 24px;
 }
-ul li a {
+.firstlist  li a {
     text-decoration: none;
     color: black;
 }
-li {
+.firstlist li {
     display: inline;
     padding: 15px;
+    
 }
 
  body {
@@ -35,13 +37,16 @@ li {
 #about {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 #about img {
-    margin: 40px;
+    margin: 20px;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 10px 10px #ff99ff;
+
 
 }
 #about h2 {
@@ -49,16 +54,19 @@ li {
     background-color: black;
     color: white;
     box-shadow: 10px 10px #ff99ff;
-    width: 35%;
+    width: 50%;
     padding-left: 10px;
 
+}
+#writing {
+    width: 800px;
 }
 #titlecontainer h2 {
     font-size: 30px;
     background-color: black;
     color: white;
     box-shadow: 10px 10px #ff99ff;
-    width: 25%;
+    width: 45%;
     padding-left: 10px;
 }
 #mothercontainer {
@@ -79,6 +87,7 @@ li {
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 10px 10px #ff99ff;
+    margin: 15px;
 }
 
 .container img {
@@ -91,7 +100,7 @@ li {
     background-color: black;
     color: white;
     box-shadow: 10px 10px #ff99ff;
-    width: 25%;
+    width: 35%;
     padding-left: 10px;
 }
 .icons {
@@ -109,8 +118,14 @@ footer h3 {
 /* CONTACT.HTML STYLING */
 #contactlist {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    list-style-type: none;
+    min-width: 100px;
+    
+    
+    
 
 
 }
@@ -118,7 +133,69 @@ footer h3 {
     background-color: black;
     color: white;
     padding: 20px;
-    box-shadow: 10px 10px #ff99ff
-    
+    box-shadow: 10px 10px #ff99ff;
+    text-decoration: none; 
+    margin: 15px;
+    display: inline-flex;
+}
+.home {
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+.home li {
+    list-style-type: none;
     
 }
+.home li a {
+    text-decoration: none;
+}
+
+/* RESPONSIVE QUERIES */
+
+
+    @media only screen and (max-width:900px) {
+        #mothercontainer {
+            height: 750px;
+
+        }
+    }
+
+    @media only screen and (max-width:610px) {
+        #mothercontainer {
+            height: 900px;
+        }
+    }
+    @media only screen and (max-width:400px) {
+    .icons {
+        width: 300px;
+        margin: 15px;
+    }
+   
+    @media only screen and (max-width:375px) {
+    body {
+        width: 300px;
+        margin: 15px;
+    }
+   
+}
+    @media only screen and (max-width:800px) {
+        #contactlist li a{
+            height: 50px;
+            width: 100px;
+            
+
+        }
+
+    }
+    @media only screen and (max-width:630px) {
+        #contactlist li a  { 
+        height: 75px;
+        width: 75px;
+        align-content:center;
+        }
+        .home {
+            margin: 5px;
+        }
+
+    }
